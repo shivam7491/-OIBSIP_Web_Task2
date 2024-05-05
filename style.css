@@ -1,0 +1,204 @@
+/* Global Styles */
+body {
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  background-color: #f0f0f0;  
+  color: #333; 
+  line-height: 1.6; 
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+  margin-bottom: 15px; 
+}
+
+a {
+  color: #007bff; 
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px; 
+}
+
+/* Navigation Styles */
+.main-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox for the navigation */
+  background-color: #333; 
+}
+
+.main-nav li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 15px;
+}
+
+/* Portfolio Section Styles */
+.portfolio-grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-item {
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  overflow: hidden; 
+}
+
+.project-thumb {
+  width: 100%; 
+  transition: all 0.3s ease-in-out; 
+}
+
+.project-item:hover .project-thumb {
+  transform: scale(1.05); 
+}
+@media (max-width: 768px) {
+  .portfolio-grid {
+      grid-template-columns: 1fr; /* Single column on smaller screens */
+  }
+}
+body {
+  background: linear-gradient(to bottom, #ac8f26 0%, #722d76 100%); /* Dark to greyish gradient */
+}
+.btn-primary,
+.btn-secondary {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Standard blue */
+    color: #fff; /* White text */
+}
+
+.btn-secondary {
+    background-color: #ddd; /* Light grey */
+    color: #333; /* Dark text */
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px); /* Slight 3D lift on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Add a subtle hover shadow */
+}
+
+.btn-primary:active { /* Button press effect */
+    transform: translateY(1px); /* Slight sink */
+    background-color: #0067cc; /* Darken on click */
+}
+.about-text {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow for about section */
+}
+
+.project-item {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for project thumbnails */
+}
+#hero {
+    background: radial-gradient(ellipse at center,  rgba(29, 108, 29, 0.5) 0%, rgba(85, 75, 75, 0.8) 70%); /* Greenish glow */
+    /* Optionally add: 
+       animation: subtle-glow 5s infinite alternate; */
+}
+
+@keyframes subtle-glow {
+    from { background-color: rgba(141, 189, 58, 0.4); }
+    to { background-color: rgba(180, 146, 42, 0.7); }
+}
+.hero-title, .tagline {
+  text-shadow: 0 0 10px rgba(100, 180, 100, 0.7); /* Greenish text glow */
+}
+.btn-primary:hover {
+  box-shadow: 0 0 10px 2px rgba(200, 200, 200, 0.8); /* Silverish glow */
+}
+
+.btn-secondary:hover {
+  box-shadow: 0 0 10px 2px rgba(255, 100, 100, 0.6); /* Reddish glow */
+}
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%; 
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+  opacity: 0;  /* Initially hidden */
+  color: #fff;
+  transition: opacity 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.project-item:hover .project-overlay {
+  opacity: 1;  /* Show on hover */
+}
+/* Hero Section with Triangular Pattern */
+#hero {
+  background-color: #252839; /* Deep base color */
+  background-image: 
+      linear-gradient(to bottom, 
+      #ac8f26 0%, 
+          rgba(255, 160, 100, 0.1) 50%, 
+          transparent 50%, 
+          transparent 100%), 
+      linear-gradient(to right, 
+          transparent 0%, 
+          transparent 50%, 
+          #ac8f26 50%, 
+          rgba(255, 160, 100, 0.1) 100%);
+  background-size: 20px 20px; /* Adjust size as needed */
+  background-position: 0 0, 10px 10px; 
+  color: #f0f0f0; /* Light text color for contrast */
+}
+
+.hero-content h1 {
+  font-size: 2em; 
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.2em; 
+}
+section { 
+  opacity: 0; 
+  transition: opacity 0.5s ease-in-out;
+}
+
+section.visible {
+  opacity: 1;  
+}
+/* Project Thumbnail Styles */
+.project-item {
+  border: 1px solid #ddd; 
+  border-radius: 5px;
+  overflow: hidden; /* Important for hover effect */
+  margin-bottom: 20px; /* Adding some spacing */
+}
+
+.project-thumb {
+  width: 100%; 
+  transition: all 0.3s ease-in-out; 
+  display: block; /* Makes scaling work properly */
+}
+
+.project-item:hover .project-thumb {
+  transform: scale(1.05); 
+  opacity: 0.9; /* Add a subtle fade on hover */
+}

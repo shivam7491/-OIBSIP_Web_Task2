@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+    <title>Shivam Soni - Web Design Portfolio</title>
+</head>
+<body>
+    <header id="hero">
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <canvas id="background-canvas"></canvas>
+        <div class="hero-content">
+            <h1>Shivam Soni</h1>
+            <p class="tagline">Web Design Expert | UI Enthusiast</p>
+            <a href="#about" class="btn-primary">Discover My Story</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <div class="profile-info">
+                    <div class="profile-pic-wrap">
+                        <img src="my-profile-pic.jpg" alt="Shivam Soni" class="profile-pic" height="50" width="50"><b><h3>Shivam Soni</h3></b>
+                    </div>
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>Hello! I'm Shivam, a BCA graduate with a passion for crafting exceptional web experiences.  I specialize in building beautiful, user-centered websites that excel in both functionality and seamless user interactions. Based in India, I'm driven by the challenge of turning ideas into engaging digital realities. </p>
+                        <a href="my-resume.pdf" target="_blank" class="btn-secondary">Download Resume</a> 
+                    </div>
+                </div>
+                <div class="skills-section">
+                    <h3>My Skillset</h3>
+                    <ul class="skills-list">
+                        <li>HTML5</li>
+                        <li>CSS3 (Flexbox, Grid)</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>UI/UX Principles</li>
+                        <li>Sass/SCSS</li>
+                        <li>Git & Version Control</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <div class="container">
+                <h2>My Featured Work</h2>
+
+                  <ol>
+                      <li>
+                          <h2>E-Commerce Website Overhaul:</h2>
+                          <p><strong>Objective:</strong> Revamp an outdated e-commerce platform to enhance user experience, improve performance, and increase conversion rates.</p>
+                          <h3>Key Features:</h3>
+                          <ul>
+                              <li>Responsive design for seamless browsing across devices.</li>
+                              <li>Integration of secure payment gateways for smooth transactions.</li>
+                              <li>Implementation of advanced search and filtering options for easy product discovery.</li>
+                              <li>Customized recommendation engine based on user behavior and preferences.</li>
+                          </ul>
+                          <p><strong>Technologies Used:</strong> HTML5, CSS3, JavaScript, React.js, Node.js, MongoDB, Express.js.</p>
+                          <p><strong>Impact:</strong> The revamped website witnessed a significant increase in user engagement metrics, leading to a 30% rise in sales within the first quarter post-launch.</p>
+                      </li>
+                      <li>
+                          <h2>Healthcare Management System:</h2>
+                          <p><strong>Objective:</strong> Develop a comprehensive platform to streamline patient management, appointment scheduling, and medical records management for healthcare facilities.</p>
+                          <h3>Key Features:</h3>
+                          <ul>
+                              <li>Secure user authentication and role-based access control.</li>
+                              <li>Automated appointment reminders via email and SMS.</li>
+                              <li>Electronic health records (EHR) management with encryption for data security.</li>
+                              <li>Integration with third-party APIs for insurance verification and payment processing.</li>
+                          </ul>
+                          <p><strong>Technologies Used:</strong> Python, Django, PostgreSQL, HTML5, CSS3, JavaScript.</p>
+                          <p><strong>Impact:</strong> The healthcare management system optimized operational efficiency for clinics and hospitals, resulting in reduced administrative overheads and improved patient satisfaction scores.</p>
+                      </li>
+                      <li>
+                          <h2>Machine Learning-Based Stock Prediction App:</h2>
+                          <p><strong>Objective:</strong> Develop an intelligent application leveraging machine learning algorithms to predict stock prices and aid investors in making informed decisions.</p>
+                          <h3>Key Features:</h3>
+                          <ul>
+                              <li>Real-time data scraping from financial APIs for up-to-date market information.</li>
+                              <li>Implementation of regression and time series forecasting models for stock price prediction.</li>
+                              <li>Interactive visualization of historical and predicted stock trends.</li>
+                              <li>Personalized portfolio management and risk assessment tools.</li>
+                          </ul>
+                          <p><strong>Technologies Used:</strong> Python, Flask, scikit-learn, TensorFlow, HTML5, CSS3, JavaScript.</p>
+                          <p><strong>Impact:</strong> The stock prediction app garnered widespread attention in the finance community, with users reporting improved portfolio performance and more confident investment strategies.</p>
+                      </li>
+                  </ol>
+                
+                    <a href="#" class="btn-primary view-all-btn">View All Projects</a> 
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="container">
+                <h2>Services Offered</h2>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <i class="fa-solid fa-laptop-code"></i> 
+                        <h3>Web Design</h3>
+                        <p>Custom websites tailored for your brand and goals.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-paintbrush"></i>
+                        <h3>UI Design</h3>
+                        <p>Intuitive and visually appealing interface design.</p>
+                    </div>
+                    <div class="service-item">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Front-End Development</h3>
+                        <p>Clean HTML, CSS, and JavaScript to bring designs to life.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Get in Touch</h2>
+                <p>Have a project in mind? Let's collaborate!</p>
+                <a href="mailto:shivam@example.com" class="btn-primary">Email Me</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+            <p>&copy; 2024 Shivam Soni. All Rights Reserved.</p>
+            <ul class="social-links">
+                <li><a href="#" target="_blank"><i class="icon-linkedin">linkedin</i></a></li>
+                <li><a href="#" target="_blank"><i class="icon-github"></i>github</a></li>
+                <li><a href="#" target="_blank"><i class="icon-twitter"></i>twitter</a></li>
+            </ul>
+    </footer>
+
+    <script src="script.js"></script> 
+</body>
+</html>
